@@ -141,4 +141,5 @@ REST_FRAMEWORK = {
 
 CORS_ALLOWED_ORIGINS = [
    "http://localhost:4200",
+   "https://eugedoula-3c190.web.app/",
 ]
