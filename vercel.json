@@ -1,0 +1,14 @@
+{
+    "builds": [
+      {
+        "src": "euge_doula/wsgi.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "euge_doula/wsgi.py"
+      }
+    ]
+  }
