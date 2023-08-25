@@ -6,6 +6,7 @@ class Cielo(models.Model):
     cover_img = models.CharField( max_length=150)
     subtitle = models.TextField()
     video = models.CharField( max_length=50)
+    video2 = models.CharField( max_length=50,null=True)
     video_text = models.TextField()
     text1 = models.TextField()
     text2 = models.TextField()
