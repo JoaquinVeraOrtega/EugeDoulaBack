@@ -48,7 +48,7 @@ INSTALLED_APPS = [
     'about',
     'contact',
     'testimonial',
-
+    'blog',
 ]
 
 MIDDLEWARE = [
@@ -137,10 +137,12 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 REST_FRAMEWORK = {
     'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema',
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
+
 }
 
 CORS_ALLOWED_ORIGINS = [
    "http://localhost:4200",
    "https://eugeortega.com.ar",
-   "https://eugedoula-3c190.web.app/",
+   "https://eugedoula-3c190.web.app"
 ]
